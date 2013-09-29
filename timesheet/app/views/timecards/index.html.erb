@@ -12,7 +12,7 @@
       <tr>
         <td><%= timecard.employee.full_name %></td>
         <td><%= timecard.weekDate.strftime('%d (%a), %b %Y') %></td>
-        <td><%= timecard.total_hours %></td>
+        <td class="numeric"><%= timecard.total_hours %></td>
       </tr>
   <% end %>
 
