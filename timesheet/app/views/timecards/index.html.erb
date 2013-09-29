@@ -1,0 +1,21 @@
+<h1>Timecards</h1>
+
+<table>
+  <thead>
+  <tr>
+    <td>Employee Name</td>
+    <td>Date</td>
+    <td>Total Hours</td>
+  </tr>
+  </thead>
+  <% @timecards.each do |timecard| %>
+      <tr>
+        <td><%= timecard.employee.full_name %></td>
+        <td><%= timecard.weekDate.strftime('%d (%a), %b %Y') %></td>
+        <td><%= timecard.total_hours %></td>
+      </tr>
+  <% end %>
+
+</table>
+
+<%= link_to 'New Timecard', new_timecard_path %>

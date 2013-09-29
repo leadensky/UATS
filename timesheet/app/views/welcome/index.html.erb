@@ -1,0 +1,22 @@
+<h1>Uggh, Another Timecard System</h1>
+<div class="admin">
+  <ul>
+    <li>
+      <%= link_to 'Projects', {:action => 'index', :controller => 'projects'} %>
+    </li>
+    <li>
+      <%= link_to 'Employees', {:action => 'index', :controller => 'employees'} %>
+    </li>
+    <li>
+      <%= link_to 'Timecard Categories', {:action => 'index', :controller => 'timecard_categories'} %>
+    </li>
+  </ul>
+</div>
+<div class="employee">
+  <ul>
+    <li>
+      <%= link_to 'Create new timecard', {:action => 'index', :controller => 'timecards'} %>
+    </li>
+  </ul>
+</div>
+
